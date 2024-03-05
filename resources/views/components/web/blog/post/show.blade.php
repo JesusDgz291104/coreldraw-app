@@ -1,4 +1,4 @@
-
+<x-alert class="mb-4" type='Error' :message="$post->title">
 
 <div {{ $attributes->class(['my-5', 'bg-blue-100' => false])->merge(['other-attr' => 'data1']) }}>
     {{-- <div {{ $attributes->merge([ 'class' => 'my-5', 'other-attr' => 'data1' ]) }}> --}}

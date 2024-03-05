@@ -16,6 +16,9 @@ use Inertia\Inertia;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/patos',  function () {
+    echo  'Hola, soy un patron';
+});
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -30,7 +33,7 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::group(['prefix' => 'dashboard', 'middleware' => ['auth']], function () {
+Route::group(['prefix' => 'dashboard', 'middleware' => ['auth','admin']], function () {
     Route::get('/', function () {
         return view('dashboard');
     })->name("dashboard");

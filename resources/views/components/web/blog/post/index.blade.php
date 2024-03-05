@@ -15,3 +15,4 @@
 {{ $posts->links() }}
 
 {{ $footer }}
+

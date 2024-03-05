@@ -5,7 +5,7 @@
 
 /* ******************** base */
 h1{
-    @apply text-4xl mb-3
+    @apply text-4xl  mb-3
 }
 /* ******************** base */
 
@@ -57,7 +57,7 @@ label {
 
 /* ******************** card */
 .card {
-    @apply p-6 rounded shadow-sm 
+    @apply p-6 rounded shadow-sm
 }
 .card-white {
     @apply bg-white
